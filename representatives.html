@@ -11,8 +11,8 @@
     <body>
 
         <header>
-            <nav>
-                <div class="container">
+            <nav class="header-nav">
+                <div class="container container--big">
                     <input type="checkbox" id="check">
                     <label for="check">
                         <i class="fa fa-bars" id="btn"></i>
@@ -21,7 +21,8 @@
                     <img src="images/logo_small.jpg" />
                     <ul>
                         <li><a href="news.html">Новости</a></li>
-                        <li><a href="products.html">Продукция</a></li>
+                        <li><a href="index.html">Продукция</a></li>
+                        <li><a href="uslugi.html">Обслуживание</a></li>
                         <li><a href="representatives.html">Представители</a></li>
                         <li><a href="faq.html">Вопрос-ответ</a></li>
                         <li><a href="contacts.html">Контакты</a></li>
@@ -31,8 +32,12 @@
         </header>
 
         <main>
-            <section class="wrapper flow">
-                <h1>Региональные представители:</h1>
+            <section class="page-hero bg-lightblue">
+                <div class="container">
+                    <h1>Региональные представители:</h1>
+                </div>
+            </section>
+            <section class="container">
 
                 <table>
                     <tbody>
@@ -47,7 +52,7 @@
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
-                        <td colspan="3">Центральный  регион</font></b></td>
+                        <td colspan="3">Центральный  регион></b></td>
                     </tr>
                         <tr id="har">
                             <td>г. Москва</td>
@@ -236,7 +241,7 @@
         <footer>
             <div class="container">
                 <hr>
-                <div class="gridish">
+                <div class="footer__grid">
                     <div>
                         <p>"Электробезопасность-Вятка"</p>
                     </div>
@@ -244,10 +249,10 @@
                         <p>Россия, 610050, г. Киров,<br>ул. Менделеева, д. 2</p>
                     </div>
                     <div>
-                        <p>Тел/факс: + 7 (8332) 32-17-54<br>E-mail: ebp@mail.ru</p>
+                        <p>Тел/факс: <a href="tel:+78332321754" class="footer__link">+ 7 (8332) 32-17-54</a><br>E-mail: <a href="mailto: ebp@mai..ru" class="footer__link">ebp@mail.ru</a></p>
                     </div>
                 </div>
-                 <p>&copy; 2004 - 2024 Компания &quot;Электробезопасность-Вятка&quot; Все права защищены</p>
+                <p>&copy; 2004 - 2024 Компания &quot;Электробезопасность-Вятка&quot; Все права защищены</p>
             </div>
         </footer>
 
