@@ -109,6 +109,7 @@ svg {
     margin-inline: auto;
 }
 .even-columns {
+    margin-top: 1rem;
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
@@ -343,8 +344,8 @@ ul {
     border: 2px solid #FF6602;
 }
 .button:hover {
-    border: 2px solid #FF6602;
-    background: #FF6602;
+    border: 2px solid #d1541e;
+    background: #d1541e;
     transition: .4s;
 }
 .cta-group {
@@ -370,8 +371,14 @@ ul {
 .one-third{
     flex: 2;
 }
-
-
+@media (max-width: 800px) {   
+    .features .even-columns {
+        display: block;
+    }
+    .yt-container {
+        margin-block: 1rem;
+    }
+}
 /* new  nav*/
 nav {
 	position: fixed;
@@ -488,11 +495,12 @@ nav .icon-burger .line {
 .news-vektor-gallery {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
     gap: 1rem;
-    margin: 1rem 0 2rem;
 }
 .news-vektor-gallery > * {
-    flex: 0 1 90px;
+    width: 100px;
+    gap: 1rem
 }
 .news-vektor-gallery img{
     box-shadow: 3px 3px 5px grey;
