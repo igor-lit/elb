@@ -138,7 +138,17 @@ h1 {
     color: #FF6602;
     font-size: 44px;
 }
-
+@media (max-width: 500px) {
+    h1 {
+        font-size: 1.4rem;
+    }
+    h2{
+        font-size: 1.2rem;
+    }
+    h3 {
+        font-size: 1.1rem;
+    }
+}
 h2 {
     font-family: "Involve-SemiBold", sans-serif;
     font-size: 34px;
@@ -173,7 +183,9 @@ a {
 ul, ol {
     list-style-position: inside;
 }
-
+a {
+    word-break: break-all;
+}
 /* Header */
 .header-nav {
     text-transform: uppercase;
