@@ -3,7 +3,7 @@
 
 @font-face {
     font-family: 'Involve-Regular';
-    src: url('./fonts/Involve-SemiBold.otf') format('truetype');
+    src: url('../fonts/Involve-Regular.otf') format('truetype');
   }
 @font-face {
     font-family: 'Involve-Bold';
@@ -22,6 +22,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: "Involve-Regular", sans-serif;
 }
 html:focus-within {
     scroll-behavior: smooth;
@@ -33,35 +34,12 @@ svg {
     display: block;
 }
 :root { /*mobile first */
-    --clr-primary-400: #0012ff;
-    --clr-primary-100: #eef8ff;
+
     --clr-blue: #0012ff;
-
-    --clr-accent-400: orange;
-    --clr-accent-100: yellow;
-
-    --clr-neutral-100: white;
-    --clr-neutral-400: #f4f4f4;
-    --clr-neutral-900: black;
 
     --ff-primary-regular: "Involve-Regular", sans-serif;
     --ff-primary-semibold: "Involve-SemiBold", sans-serif;
     --ff-primary-bold: "Involve-Bold", sans-serif;
-
-    --ff-body: var(--ff-primary-regular);
-    --ff-heading: var(--ff-primary-bold);
-
-    --fs-body: 1rem;
-    --fs-primary-heading: 2.25rem;
-    --fs-secondary-heading: 2rem;
-    --fs-nav: 1rem;
-    --fs-button: 1rem;
-
-    --size-50: .5rem;
-    --size-100: 1rem;
-    --size-150: 1.5rem;
-    --size-200: 2rem;
-    --size-300: 3rem;
 
 }
 /* Backgrounds */
@@ -150,19 +128,19 @@ svg {
 body {
     background-color: white;
     line-height: 1.5;
-    font-size: var(--fs-body);
-    font-family: var(--ff-primary-regular);
+    font-size: 1rem;
+    font-family: "Involve-Regular", sans-serif;
 }
 h1 {
-    font-family: var(--ff-primary-semibold);
-    font-size: var(--fs-primary-heading);
+    font-family: "Involve-SemiBold", sans-serif;
+    font-size:  2.25rem;
     line-height: 1.2;
     color: #FF6602;
     font-size: 44px;
 }
 
 h2 {
-    font-family: var(--ff-primary-regular);
+    font-family: "Involve-Regular", sans-serif;
     font-size: 34px;
     color: #FF6602;
     padding-top: 1rem;
