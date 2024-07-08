@@ -140,7 +140,7 @@ h1 {
 }
 
 h2 {
-    font-family: "Involve-Regular", sans-serif;
+    font-family: "Involve-SemiBold", sans-serif;
     font-size: 34px;
     color: #FF6602;
     padding-top: 1rem;
@@ -501,8 +501,9 @@ nav .icon-burger .line {
 
 
 /* Contacts */
-
-
+.bold {
+    font-family: "Involve-Bold", sans-serif;
+}
 #reqs .grid-ish > *{
     align-self: start;
 }
@@ -537,7 +538,7 @@ nav .icon-burger .line {
 }
 .box input[type="radio"]:checked + label{
     background: #fff;
-    font-weight: 600;
+    font-family: "Involve-SemiBold", sans-serif;;
 }
 .box input[type="radio"]:checked + label + .box-content{
     display: block;
