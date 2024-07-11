@@ -3,16 +3,16 @@
 
 @font-face {
     font-family: 'Involve-Regular';
-    src: url('../fonts/Involve-Regular.otf') format('truetype');
+    src: url('./fonts/Involve-SemiBold.otf') format('truetype');
   }
 @font-face {
     font-family: 'Involve-Bold';
-    src: url('../fonts/Involve-Bold.otf') format('truetype');
+    src: url('./fonts/Involve-Bold.otf') format('truetype');
   }
 
 @font-face {
     font-family: 'Involve-SemiBold';
-    src: url('../fonts/Involve-SemiBold.otf') format('truetype');
+    src: url('./fonts/Involve-SemiBold.otf') format('truetype');
   }
 *,
 *::before,
@@ -22,7 +22,6 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Involve-Regular", sans-serif;
 }
 html:focus-within {
     scroll-behavior: smooth;
@@ -34,12 +33,35 @@ svg {
     display: block;
 }
 :root { /*mobile first */
-
+    --clr-primary-400: #0012ff;
+    --clr-primary-100: #eef8ff;
     --clr-blue: #0012ff;
+
+    --clr-accent-400: orange;
+    --clr-accent-100: yellow;
+
+    --clr-neutral-100: white;
+    --clr-neutral-400: #f4f4f4;
+    --clr-neutral-900: black;
 
     --ff-primary-regular: "Involve-Regular", sans-serif;
     --ff-primary-semibold: "Involve-SemiBold", sans-serif;
     --ff-primary-bold: "Involve-Bold", sans-serif;
+
+    --ff-body: var(--ff-primary-regular);
+    --ff-heading: var(--ff-primary-bold);
+
+    --fs-body: 1rem;
+    --fs-primary-heading: 2.25rem;
+    --fs-secondary-heading: 2rem;
+    --fs-nav: 1rem;
+    --fs-button: 1rem;
+
+    --size-50: .5rem;
+    --size-100: 1rem;
+    --size-150: 1.5rem;
+    --size-200: 2rem;
+    --size-300: 3rem;
 
 }
 /* Backgrounds */
@@ -128,29 +150,19 @@ svg {
 body {
     background-color: white;
     line-height: 1.5;
-    font-size: 1rem;
-    font-family: "Involve-Regular", sans-serif;
+    font-size: var(--fs-body);
+    font-family: var(--ff-primary-regular);
 }
 h1 {
-    font-family: "Involve-SemiBold", sans-serif;
-    font-size:  2.25rem;
+    font-family: var(--ff-primary-semibold);
+    font-size: var(--fs-primary-heading);
     line-height: 1.2;
     color: #FF6602;
     font-size: 44px;
 }
-@media (max-width: 500px) {
-    h1 {
-        font-size: 1.4rem;
-    }
-    h2{
-        font-size: 1.2rem;
-    }
-    h3 {
-        font-size: 1.1rem;
-    }
-}
+
 h2 {
-    font-family: "Involve-SemiBold", sans-serif;
+    font-family: var(--ff-primary-regular);
     font-size: 34px;
     color: #FF6602;
     padding-top: 1rem;
@@ -180,12 +192,10 @@ a {
 .product {
     margin-top: 105px;
 }
-ul, ol {
+ul {
     list-style-position: inside;
 }
-a {
-    word-break: break-all;
-}
+
 /* Header */
 .header-nav {
     text-transform: uppercase;
@@ -369,7 +379,7 @@ a {
         margin-block: 1rem;
     }
 }
-/* new nav*/
+/* new  nav*/
 nav {
 	position: fixed;
 	z-index: 10;
@@ -508,76 +518,6 @@ nav .icon-burger .line {
     left: 0;
     width: 100%;
     height: 100%;
-}
-
-
-
-/* Contacts */
-.bold {
-    font-family: "Involve-Bold", sans-serif;
-}
-#reqs .grid-ish > *{
-    align-self: start;
-}
-
-.box {
-    display: flex;
-    flex-wrap: wrap;
-}
-.box label {
-    display: block;
-    order: 1;
-    text-align: center;
-    box-shadow: 0 2px 10px -2px rgba(0, 0, 0, 0.5);
-    padding: 16px 20px;
-    margin-right: 4px;
-    cursor: pointer;
-    background: #eef8ff;
-
-}
-.box-content {
-    display: none;
-    flex-grow: 1;
-    box-shadow: 0 2px 10px -2px rgba(0, 0, 0, 0.5);
-    padding: 30px;
-    background: #fff;
-    order: 99;
-    flex-grow: 1;
-    width: 100%;
-}
-.box input[type="radio"] {
-    display: none;
-}
-.box input[type="radio"]:checked + label{
-    background: #fff;
-    font-family: "Involve-SemiBold", sans-serif;;
-}
-.box input[type="radio"]:checked + label + .box-content{
-    display: block;
-}
-@media (max-width: 600px) {
-    .box-content, .box label {
-        order: initial;
-    }
-    .box label {
-        width: 100%;
-        margin-right: 0;
-        margin-top: 4px;
-    }
-}
-.rep-content {
-    display: flex;
-}
-.rep-content > * {
-    flex-basis: 100%;
-    text-align: center;
-}
-.rep-name {
-    justify-content: center;
-    align-self: self-start;
-}
-.rep-info {
-    justify-content: start;
 }
 /* Footer */
 
